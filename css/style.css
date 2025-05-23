@@ -111,3 +111,12 @@ nav{
     background-color: #fff;         
 
 }
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0
+}
+.about .about-img{
+    width: 395%;
+}
