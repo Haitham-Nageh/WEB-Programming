@@ -27,4 +27,15 @@
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
+
+.blog-card {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: left;
+}
+.blog-card h3 {
+  color: var(--main-color, #0099a0);
+}
 /* end blog section */
