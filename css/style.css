@@ -160,3 +160,11 @@ nav{
   transition: 0.7s;
   cursor: pointer;
 }
+.featured-books {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.featured-Books{
+    display: flex;
+    justify-content: center;
+}
