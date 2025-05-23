@@ -120,3 +120,17 @@ nav{
 .about .about-img{
     width: 395%;
 }
+.about .about-img img{
+    width: 100%;
+}
+.about .row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.about .about-discription{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
