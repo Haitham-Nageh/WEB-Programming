@@ -11,3 +11,120 @@
   overflow-x: hidden;
 }
 
+/* start blog section */
+.blog-section {
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+}
+.blog-section h2 {
+  font-size: 2rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.blog-card {
+  background: #fff;
+  box-shadow: 0 0px 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: left;
+  margin: 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.blog-card h3 {
+  color: var(--main-color, #0099a0);
+}
+.blog-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-card h3 {
+  margin: 0.8rem 0 0.5rem;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--main-color, #0099a0);
+}
+
+/* end blog section */
+/* start footer section */
+.footer {
+  background-color: #eaeaea;
+  padding: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin: auto;
+  justify-content: space-between;
+}
+.footer-col h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-col p,
+.footer-col a {
+  color: #333;
+  font-size: 0.95rem;
+  margin: 0.4rem 0;
+  display: block;
+  text-decoration: none;
+}
+
+.footer-col .logo {
+  max-width: 100px;
+  margin-bottom: 0.8rem;
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+  color: #444;
+  cursor: pointer;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #cacaca;
+  color: #999a9a;
+}
+.footer-col button {
+  padding: 0.5rem 1rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--main-color, #0099a0);
+}
+
+/* end footer section */
