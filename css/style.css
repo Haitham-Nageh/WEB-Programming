@@ -15,7 +15,13 @@
 .new-Arrivals {
   padding: 20px;
 }
-
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
 .new-Arrivals .title {
   display: flex;
   justify-content: center;
@@ -38,6 +44,7 @@
   flex-direction: row;
   justify-content: center;
 }
+
 
 .new-Arrivals .book {
   min-width: 200px;
