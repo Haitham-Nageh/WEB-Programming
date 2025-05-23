@@ -29,6 +29,7 @@ ul {
 .row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -118,52 +119,53 @@ header label {
   }
 }
 /* end header */
-
-.introduction {
+/* start home section */
+.home {
   background-image: url("../image/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  display: flex;
-  justify-content: center;
   padding: 27px 0px;
-  height: 500px;
+  height: calc(100vh - 77px);
 }
-.introduction_image img {
-  width: 550px;
+.home > div,
+.home .row {
+  height: 100%;
 }
-.introduction_words {
+.home-image img {
+  width: 100%;
+}
+.home-content {
   padding: 20px 0;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  max-width: 50%;
 }
-.introduction_words span {
+.home-content span {
   color: #0099a0;
 }
-.introduction_words h2 {
+.home-content h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 43px;
+  text-transform: uppercase;
+  font-size: 4rem;
 }
-.introduction_words p {
-  width: 80%;
-}
-.introduction_words button {
-  width: 16%;
+.home-content button {
+  width: fit-content;
   color: white;
-  background-color: #0099a0;
-  padding: 7px;
-  border: #0099a0;
-  margin-top: 10px;
+  background-color: var(--main-color, #0099a0);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: var(--main-color, #0099a0) 2px solid;
+  transition: all 0.3s ease;
 }
-.introduction_words button:hover {
+.home-content button:hover {
   color: black;
   background-color: white;
-  border: #0099a0 2px solid;
-  transition: 0.7s;
-  cursor: pointer;
 }
+/* start end section */
 .services {
   width: 100%;
   display: flex;
