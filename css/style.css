@@ -225,3 +225,19 @@ nav{
 .book .price {
   font-weight: bold;
 }
+.book .price sub ins {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 12px;
+}
+.featured-Books .row{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+}
+
+.featured-Books .row .title{
+    display: flex;
+    justify-content: center;
+}
