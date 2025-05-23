@@ -11,3 +11,30 @@
   overflow-x: hidden;
 }
 
+/* Start New Arrivals */
+.new-Arrivals {
+  padding: 20px;
+}
+
+.new-Arrivals .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: var(--font-main);
+}
+
+.new-Arrivals .container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.row1, .row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
