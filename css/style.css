@@ -198,3 +198,30 @@ nav{
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+.book img {
+  width: 70%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.book h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.book span {
+  color: #888;
+  font-size: 14px;
+}
+
+.book p:first-of-type {
+  font-size: 14px;
+  margin: 5px 0;
+  color: teal;
+}
+
+.book .price {
+  font-weight: bold;
+}
