@@ -89,3 +89,15 @@ nav{
     border: #0099A0;
     margin-top: 10px;
 }
+.services{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.services .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
