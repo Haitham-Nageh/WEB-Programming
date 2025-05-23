@@ -169,3 +169,33 @@ border: 1px solid var(--secondary-color);
   display: none;
 }
 /*End Of Reviews*/
+
+/*Start Of Banner*/
+.banner{
+  background-image: url('../images/banner.jpg');
+  background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+
+}
+
+  .banner button{
+   border: var(--secondary-color) 1px solid;
+    padding: 5px 16px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 111px;
+    height: 50px;
+    word-break: break-all;
+    position: relative;
+    top: 60%;
+    z-index: 99;
+    left: -38%;
+    border-radius: 7px;
+color: white;
+  }
+  /*end Of Banner*/
