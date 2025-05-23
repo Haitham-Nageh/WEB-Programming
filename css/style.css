@@ -241,3 +241,8 @@ nav{
     display: flex;
     justify-content: center;
 }
+.featured-Books .book button{
+    border: #0099A0 1px solid;
+    padding: 5px 16px;
+    background-color: white;
+}  
