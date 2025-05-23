@@ -44,4 +44,22 @@
   object-fit: cover;
   display: block;
 }
+
+.blog-card h3 {
+  margin: 0.8rem 0 0.5rem;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--main-color, #0099a0);
+}
+
 /* end blog section */
