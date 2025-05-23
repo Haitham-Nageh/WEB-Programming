@@ -76,4 +76,29 @@
   margin: auto;
   justify-content: space-between;
 }
+.footer-col h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-col p,
+.footer-col a {
+  color: #333;
+  font-size: 0.95rem;
+  margin: 0.4rem 0;
+  display: block;
+  text-decoration: none;
+}
+
+.footer-col .logo {
+  max-width: 100px;
+  margin-bottom: 0.8rem;
+}
+
+.social-icons i {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+  color: #444;
+  cursor: pointer;
+}
 /* end footer section */
