@@ -112,5 +112,14 @@ input[type="email"] {
   background-color: #cacaca;
   color: #999a9a;
 }
+.footer-col button {
+  padding: 0.5rem 1rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--main-color, #0099a0);
+}
 
 /* end footer section */
