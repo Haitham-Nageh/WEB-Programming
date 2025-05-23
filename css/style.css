@@ -98,3 +98,74 @@
   color: white;
 }
 /* End New Arrivals */
+
+/* Start Reviews */
+.reviews {
+  padding: 20px;
+    font-family: var(--font-main);
+}
+
+.reviews .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: var(--font-main);
+}
+
+.reviews .container {
+  display: flex;
+  overflow-x: auto;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+.reviews .container .box{
+  min-width: 200px;
+  background: #fff;
+  margin: 5px;
+  flex-shrink: 0;
+border: 1px solid var(--secondary-color);
+  box-shadow: 0px 2px 4px 4px rgba(0, 188, 212, 0.2);
+    line-height: 22px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.reviews .container .box .imageandq{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.reviews .container .box img{
+    width: 75px;
+    border-radius: 50%;
+}
+.reviews .container .box .fa-quote-right{
+    font-size: 80px;
+    color: #eee;
+    overflow-y: hidden;
+    
+}
+.reviews .container .box .text{
+    position: relative;
+    right: -2px
+}
+.reviews .container .box .text p{
+    text-align: justify;
+    margin-bottom: 5px;
+}
+.reviews .container .box .text .stars{
+     color: var(--main-color);
+  margin-bottom: 10px;
+}
+.reviews .container::-webkit-scrollbar {
+  display: none;
+}
+/*End Of Reviews*/
