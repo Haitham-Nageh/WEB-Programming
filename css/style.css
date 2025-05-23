@@ -1,12 +1,12 @@
 /* Variables */
 :root {
-  --main-color: #0099A0;
+  --main-color: #0099a0;
   --secondary-color: #00bcd4;
   --font-main: Arial, Helvetica, sans-serif;
 }
 * {
   box-sizing: border-box;
- padding: 0;
+  padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
@@ -49,38 +49,80 @@
 .new-Arrivals .book {
   min-width: 200px;
   background: #fff;
-  border: 1px solid #ddd;
-  padding: 15px;
+  box-shadow: 0 0px 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: left;
   margin: 5px;
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
-
-.new-Arrivals .book img {
-  width: 70%;
-  height: 200px;
+.blog-card h3 {
+  color: var(--main-color, #0099a0);
+}
+.blog-card img {
+  width: 100%;
+  height: 400px;
   object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.99);
-  transition: transform 0.4s ease;
+  display: block;
 }
 
-.new-Arrivals .book h3 {
-  margin: 10px 0 5px;
-  font-size: 16px;
+.blog-card h3 {
+  margin: 0.8rem 0 0.5rem;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--main-color, #0099a0);
+}
+
+/* end blog section */
+/* start footer section */
+.footer {
+  background-color: #eaeaea;
+  padding: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin: auto;
+  justify-content: space-between;
+}
+.footer-col h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-col p,
+.footer-col a {
   color: #333;
+  font-size: 0.95rem;
+  margin: 0.4rem 0;
+  display: block;
+  text-decoration: none;
 }
 
-.new-Arrivals .stars {
-  color: var(--main-color);
-  margin-bottom: 10px;
+.footer-col .logo {
+  max-width: 100px;
+  margin-bottom: 0.8rem;
 }
 
-.new-Arrivals .book button {
-  border: var(--main-color) 1px solid;
-  padding: 5px 16px;
-  background-color: white;
+.social-icons i {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+  color: #444;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
