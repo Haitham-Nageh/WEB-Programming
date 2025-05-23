@@ -51,3 +51,14 @@ nav{
     text-decoration: none;
     color: black;
 }
+.introduction{
+    background-image: url('doc/image/bg.png');
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 27px 0px;
+    height: 500px;
+}
