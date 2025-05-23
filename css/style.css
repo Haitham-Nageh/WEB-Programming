@@ -11,6 +11,194 @@
   overflow-x: hidden;
 }
 
+/* Start New Arrivals */
+.new-Arrivals {
+  padding: 20px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.new-Arrivals .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: var(--font-main);
+}
+
+.new-Arrivals .container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.row1, .row2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.new-Arrivals .book {
+  min-width: 200px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 5px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.new-Arrivals .book img {
+  width: 70%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.99);
+  transition: transform 0.4s ease;
+}
+
+.new-Arrivals .book h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.new-Arrivals .stars {
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.new-Arrivals .book button {
+  border: var(--main-color) 1px solid;
+  padding: 5px 16px;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.new-Arrivals .book:hover{
+    border: 1px solid var(--secondary-color);
+  box-shadow: 0px -3px 20px 5px rgba(0, 188, 212, 0.2);
+  transition: 0.3s;
+}
+.new-Arrivals .book:hover img {
+  transform: scale(1.05);
+}
+
+.new-Arrivals .book button:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+/* End New Arrivals */
+
+/* Start Reviews */
+.reviews {
+  padding: 20px;
+    font-family: var(--font-main);
+}
+
+.reviews .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: var(--font-main);
+}
+
+.reviews .container {
+  display: flex;
+  overflow-x: auto;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+.reviews .container .box{
+  min-width: 200px;
+  background: #fff;
+  margin: 5px;
+  flex-shrink: 0;
+border: 1px solid var(--secondary-color);
+  box-shadow: 0px 2px 4px 4px rgba(0, 188, 212, 0.2);
+    line-height: 22px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.reviews .container .box .imageandq{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.reviews .container .box img{
+    width: 75px;
+    border-radius: 50%;
+}
+.reviews .container .box .fa-quote-right{
+    font-size: 80px;
+    color: #eee;
+    overflow-y: hidden;
+    
+}
+.reviews .container .box .text{
+    position: relative;
+    right: -2px
+}
+.reviews .container .box .text p{
+    text-align: justify;
+    margin-bottom: 5px;
+}
+.reviews .container .box .text .stars{
+     color: var(--main-color);
+  margin-bottom: 10px;
+}
+.reviews .container::-webkit-scrollbar {
+  display: none;
+}
+/*End Of Reviews*/
+
+/*Start Of Banner*/
+.banner{
+  background-image: url('../images/banner.jpg');
+  background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+
+}
+
+  .banner button{
+   border: var(--secondary-color) 1px solid;
+    padding: 5px 16px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 111px;
+    height: 50px;
+    word-break: break-all;
+    position: relative;
+    top: 60%;
+    z-index: 99;
+    left: -38%;
+    border-radius: 7px;
+color: white;
+  }
+  /*end Of Banner*/
 /* start blog section */
 .blog-section {
   padding: 2rem;
