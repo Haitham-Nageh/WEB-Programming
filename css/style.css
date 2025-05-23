@@ -25,24 +25,21 @@ ul {
   margin: 0;
   padding: 0;
 }
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+}
 /* end global style */
 /* start header */
 header {
   width: 100%;
-  align-items: center;
   padding: 5px;
-  display: flex;
-  justify-content: center;
   box-shadow: 0 3px 8px rgba(0, 128, 128, 0.3);
 }
-/* end header */
-.row {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-}
-
-nav {
+header nav {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -59,9 +56,10 @@ nav {
   width: 38%;
 }
 .nav_list a {
-  text-decoration: none;
   color: black;
 }
+/* end header */
+
 .introduction {
   background-image: url("../image/bg.png");
   background-size: cover;
@@ -271,13 +269,13 @@ nav {
 .new-Arrivals {
   padding: 20px;
 }
-.container {
+/* .container {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-}
+} */
 .new-Arrivals .title {
   display: flex;
   justify-content: center;
