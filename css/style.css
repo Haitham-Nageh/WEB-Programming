@@ -165,7 +165,15 @@ header label {
   color: black;
   background-color: white;
 }
-/* start end section */
+@media (max-width: 1025px) {
+  .home-content h2 {
+    font-size: 2.5rem;
+  }
+  .home-content p {
+    font-size: 0.9rem;
+  }
+}
+/* home end section */
 .services {
   width: 100%;
   display: flex;
