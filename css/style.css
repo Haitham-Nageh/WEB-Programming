@@ -63,3 +63,17 @@
 }
 
 /* end blog section */
+/* start footer section */
+.footer {
+  background-color: #eaeaea;
+  padding: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin: auto;
+  justify-content: space-between;
+}
+/* end footer section */
