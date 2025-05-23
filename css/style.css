@@ -10,4 +10,23 @@
   margin: 0;
   overflow-x: hidden;
 }
-
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.row{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+header{
+    width: 100%;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0, 128, 128, 0.3);
+}
