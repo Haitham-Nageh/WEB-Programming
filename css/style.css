@@ -189,3 +189,12 @@ nav{
   background: #0099A0;
   border-radius: 10px;
 }
+.book {
+  min-width: 200px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
