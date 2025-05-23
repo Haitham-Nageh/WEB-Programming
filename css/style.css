@@ -10,3 +10,21 @@
   margin: 0;
   overflow-x: hidden;
 }
+
+/* start blog section */
+.blog-section {
+  padding: 2rem;
+  margin: auto;
+  text-align: center;
+}
+.blog-section h2 {
+  font-size: 2rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+/* end blog section */
