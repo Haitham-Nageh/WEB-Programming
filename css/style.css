@@ -71,3 +71,21 @@ nav{
     flex-direction: column;
     gap: 30px;
 }
+.introduction_words span{
+    color: #0099A0;
+}
+.introduction_words h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:43px;
+}
+.introduction_words p{
+    width: 80%;
+}
+.introduction_words button{
+    width: 16%;
+    color: white;
+    background-color: #0099A0;
+    padding: 7px;
+    border: #0099A0;
+    margin-top: 10px;
+}
