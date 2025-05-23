@@ -211,6 +211,38 @@ header label {
   text-align: center;
   box-shadow: 0px -3px 20px 5px rgba(0, 188, 212, 0.2);
   background-color: #fff;
+  display: grid;
+  gap: 0.7rem;
+}
+.service i {
+  color: var(--main-color, #0099a0);
+  font-size: 2rem;
+}
+@media (max-width: 767px) {
+  .services .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .services .row {
+    justify-content: space-between;
+  }
+  .service {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .service {
+    width: 22%;
+  }
 }
 /* end services section */
 .about {
