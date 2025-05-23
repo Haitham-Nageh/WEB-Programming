@@ -8,8 +8,254 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
+.row{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+header{
+    width: 100%;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0, 128, 128, 0.3);
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+.nav_logo img{
+    width: 70px;
+}
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+    width: 38%;
+
+}
+.nav_list a{
+    text-decoration: none;
+    color: black;
+}
+.introduction{
+    background-image: url('../image/bg.png');
+    background-size: cover;         
+    background-position: center;    
+    background-repeat: no-repeat; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 27px 0px;
+    height: 500px;
+}
+.introduction_image img{
+    width: 550px;
+}
+.introduction_words{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.introduction_words span{
+    color: #0099A0;
+}
+.introduction_words h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:43px;
+}
+.introduction_words p{
+    width: 80%;
+}
+.introduction_words button{
+    width: 16%;
+    color: white;
+    background-color: #0099A0;
+    padding: 7px;
+    border: #0099A0;
+    margin-top: 10px;
+}
+.introduction_words button:hover{
+  color: black;
+  background-color: white;
+  border: #0099A0 2px solid;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.services{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.services .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.service{
+    
+    border: 1px solid #00bcd4;      
+    padding: 17px;                  
+    text-align: center;             
+    box-shadow: 0px -3px 20px 5px rgba(0, 188, 212, 0.2);
+    width: 20%;
+    background-color: #fff;         
+
+}
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0
+}
+.about .about-img{
+    width: 395%;
+}
+.about .about-img img{
+    width: 100%;
+}
+.about .row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.about .about-discription{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.about .about-discription h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.about .about-discription button{
+    width: 16%;
+    color: white;
+    background-color: #0099A0;
+    padding: 7px;
+    border: #0099A0;
+    margin-top: 10px;
+}
+.about .about-discription button:hover{
+  color: black;
+  background-color: white;
+  border: #0099A0 2px solid;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.featured-books {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+.featured-Books{
+    display: flex;
+    justify-content: center;
+}
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior:smooth;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #0099A0;
+  border-radius: 10px;
+}
+.book {
+  min-width: 200px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.book img {
+  width: 70%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.book h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.book span {
+  color: #888;
+  font-size: 14px;
+}
+
+.book p:first-of-type {
+  font-size: 14px;
+  margin: 5px 0;
+  color: teal;
+}
+
+.book .price {
+  font-weight: bold;
+}
+.book .price sub ins {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 12px;
+}
+.featured-Books .row{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+}
+
+.featured-Books .row .title{
+    display: flex;
+    justify-content: center;
+}
+.featured-Books .book button{
+    border: #0099A0 1px solid;
+    padding: 5px 16px;
+    background-color: white;
+}
+.book:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book:hover button {
+  background-color: #0099A0;
+  color: white;
+  transition: background-color 0.7s ease, color 0.3s ease;
+  cursor: pointer;
+}}
 
 /* Start New Arrivals */
 .new-Arrivals {
@@ -316,3 +562,4 @@ input[type="email"] {
 }
 
 /* end footer section */
+
