@@ -89,6 +89,13 @@ nav{
     border: #0099A0;
     margin-top: 10px;
 }
+.introduction_words button:hover{
+  color: black;
+  background-color: white;
+  border: #0099A0 2px solid;
+  transition: 0.7s;
+  cursor: pointer;
+}
 .services{
     width: 100%;
     display: flex;
@@ -133,4 +140,23 @@ nav{
     flex-direction: column;
     gap: 30px;
     justify-content: center;
+}
+.about .about-discription h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.about .about-discription button{
+    width: 16%;
+    color: white;
+    background-color: #0099A0;
+    padding: 7px;
+    border: #0099A0;
+    margin-top: 10px;
+}
+.about .about-discription button:hover{
+  color: black;
+  background-color: white;
+  border: #0099A0 2px solid;
+  transition: 0.7s;
+  cursor: pointer;
 }
