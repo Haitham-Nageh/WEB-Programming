@@ -62,6 +62,7 @@ a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: capitalize;
   font-size: 3rem;
+  margin-bottom: 2rem;
 }
 .main-btn,
 .secondary-btn {
@@ -452,41 +453,18 @@ header label {
 /* End New Arrivals */
 
 /* Start Reviews */
-.reviews {
-  padding: 20px;
-  font-family: var(--font-main);
-}
-
-.reviews .title {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: var(--font-main);
-}
-
-.reviews .container {
-  display: flex;
-  overflow-x: auto;
-  flex-direction: row;
-  gap: 20px;
-  padding: 10px;
-  scroll-behavior: smooth;
-}
-.reviews .container .box {
+.reviews .box {
   min-width: 200px;
   background: #fff;
   margin: 5px;
-  flex-shrink: 0;
   border: 1px solid var(--secondary-color);
   box-shadow: 0px 2px 4px 4px rgba(0, 188, 212, 0.2);
   line-height: 22px;
-  width: 300px;
+  flex-basis: 25%;
   padding: 20px;
   border-radius: 10px;
 }
-.reviews .container .box .imageandq {
+.reviews .container .box .image-and-q {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -514,9 +492,6 @@ header label {
 .reviews .container .box .text .stars {
   color: var(--main-color);
   margin-bottom: 10px;
-}
-.reviews .container::-webkit-scrollbar {
-  display: none;
 }
 /*End Of Reviews*/
 
