@@ -63,11 +63,9 @@ a {
   text-transform: capitalize;
   font-size: 3rem;
 }
-
-.main-btn {
+.main-btn,
+.secondary-btn {
   width: fit-content;
-  color: white;
-  background-color: var(--main-color, #0099a0);
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
@@ -75,9 +73,24 @@ a {
   border: var(--main-color, #0099a0) 2px solid;
   transition: all 0.3s ease;
 }
+.main-btn {
+  color: white;
+  background-color: var(--main-color, #0099a0);
+}
 .main-btn:hover {
   color: black;
   background-color: white;
+}
+.secondary-btn {
+  background-color: #fff;
+}
+
+.secondary-btn:hover {
+  color: white;
+  background-color: var(--main-color, #0099a0);
+}
+.text-center {
+  text-align: center;
 }
 /* end global style */
 /* start header */
@@ -365,52 +378,18 @@ header label {
 }
 /* end featured books */
 /* Start New Arrivals */
-.new-Arrivals {
-  padding: 20px;
-}
-/* .container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-} */
-.new-Arrivals .title {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: var(--font-main);
-}
 
-.new-Arrivals .container {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  padding: 10px;
-  scroll-behavior: smooth;
-}
-
-.row1,
-.row2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.new-Arrivals .book {
+.new-Arrivals .arrival-book {
   min-width: 200px;
   background: #fff;
   border: 1px solid #ddd;
   padding: 15px;
   margin: 5px;
-  flex-shrink: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.new-Arrivals .book img {
+.new-Arrivals .arrival-book img {
   width: 70%;
   height: 200px;
   object-fit: cover;
@@ -419,7 +398,7 @@ header label {
   transition: transform 0.4s ease;
 }
 
-.new-Arrivals .book h3 {
+.new-Arrivals .arrival-book h3 {
   margin: 10px 0 5px;
   font-size: 16px;
   color: #333;
@@ -430,26 +409,19 @@ header label {
   margin-bottom: 10px;
 }
 
-.new-Arrivals .book button {
-  border: var(--main-color) 1px solid;
-  padding: 5px 16px;
-  background-color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.new-Arrivals .book:hover {
+.new-Arrivals .arrival-book:hover {
   border: 1px solid var(--secondary-color);
   box-shadow: 0px -3px 20px 5px rgba(0, 188, 212, 0.2);
   transition: 0.3s;
 }
-.new-Arrivals .book:hover img {
+.new-Arrivals .arrival-book:hover img {
   transform: scale(1.05);
 }
 
-.new-Arrivals .book button:hover {
-  background-color: var(--main-color);
-  color: white;
+.new-Arrivals .row:first-child {
+  margin-bottom: 1rem;
 }
+
 /* End New Arrivals */
 
 /* Start Reviews */
