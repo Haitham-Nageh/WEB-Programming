@@ -573,6 +573,9 @@ header label {
 .blog-section i {
   color: var(--main-color, #0099a0);
 }
+.blog-section .icons {
+  display: flex;
+}
 /* end blog section */
 /* start footer section */
 .footer {
