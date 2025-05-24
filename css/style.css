@@ -30,6 +30,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
 a {
   text-decoration: none;
@@ -47,6 +48,30 @@ a {
 }
 .main-color {
   color: var(--main-color, #0099a0);
+}
+.section-padding {
+  padding: 3rem 0;
+}
+.section-heading {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+
+.main-btn {
+  width: fit-content;
+  color: white;
+  background-color: var(--main-color, #0099a0);
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: var(--main-color, #0099a0) 2px solid;
+  transition: all 0.3s ease;
+}
+.main-btn:hover {
+  color: black;
+  background-color: white;
 }
 /* end global style */
 /* start header */
@@ -150,7 +175,7 @@ header label {
   text-transform: uppercase;
   font-size: 4rem;
 }
-.home-content button {
+.main-btn {
   width: fit-content;
   color: white;
   background-color: var(--main-color, #0099a0);
@@ -161,7 +186,7 @@ header label {
   border: var(--main-color, #0099a0) 2px solid;
   transition: all 0.3s ease;
 }
-.home-content button:hover {
+.main-btn:hover {
   color: black;
   background-color: white;
 }
@@ -245,47 +270,20 @@ header label {
   }
 }
 /* end services section */
-.about {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-}
+/* start about section */
 .about .about-img {
-  width: 395%;
+  width: 50%;
 }
 .about .about-img img {
   width: 100%;
 }
-.about .row {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
 .about .about-discription {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  justify-content: center;
+  width: 50%;
+  display: grid;
+  gap: 1rem;
 }
-.about .about-discription h2 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.about .about-discription button {
-  width: 16%;
-  color: white;
-  background-color: #0099a0;
-  padding: 7px;
-  border: #0099a0;
-  margin-top: 10px;
-}
-.about .about-discription button:hover {
-  color: black;
-  background-color: white;
-  border: #0099a0 2px solid;
-  transition: 0.7s;
-  cursor: pointer;
-}
+
+/* end about section */
 .featured-books {
   padding: 20px;
   background-color: #f9f9f9;
