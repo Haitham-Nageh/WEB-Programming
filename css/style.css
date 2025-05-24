@@ -437,6 +437,9 @@ header label {
     width: 100%;
     max-width: calc(33.33% - 40px);
   }
+  .new-Arrivals img {
+    object-fit: contain;
+  }
 }
 
 @media (min-width: 992px) {
