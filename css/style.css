@@ -506,7 +506,7 @@ header label {
   .reviews .box {
     flex: 1 1 100%;
   }
-} 
+}
 
 /*End Of Reviews*/
 
@@ -530,14 +530,6 @@ header label {
 }
 /*end Of Banner*/
 /* start blog section */
-.blog-section {
-  padding: 2rem;
-  margin: auto;
-  text-align: center;
-}
-.blog-section h2 {
-  font-size: 2rem;
-}
 
 .blog-grid {
   display: grid;
@@ -557,6 +549,8 @@ header label {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  display: grid;
+  align-content: space-between;
 }
 .blog-card h3 {
   color: var(--main-color, #0099a0);
@@ -576,12 +570,15 @@ header label {
   font-size: 0.95rem;
   color: #555;
 }
-
+.blog-section i {
+  color: var(--main-color, #0099a0);
+}
 /* end blog section */
 /* start footer section */
 .footer {
   background-color: #eaeaea;
-  padding: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .footer-grid {
@@ -636,5 +633,4 @@ input[type="email"] {
   cursor: pointer;
   background-color: var(--main-color, #0099a0);
 }
-
 /* end footer section */
