@@ -285,20 +285,17 @@ header label {
 }
 
 /* end about section */
-.featured-books {
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-.featured-Books {
-  display: flex;
-  justify-content: center;
+/* start featured books */
+.featured-books .section-heading {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .scroll-container {
   display: flex;
   overflow-x: auto;
+  overflow-y: hidden;
   gap: 20px;
-  padding: 10px;
-  scroll-behavior: smooth;
+  padding: 20px;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -314,76 +311,59 @@ header label {
   background: #0099a0;
   border-radius: 10px;
 }
-.book {
+.featured-book {
   min-width: 200px;
   background: #fff;
   border: 1px solid #ddd;
   padding: 15px;
-  flex-shrink: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-.book img {
+.featured-book img {
   width: 70%;
   height: 200px;
   object-fit: cover;
   border-radius: 6px;
 }
 
-.book h3 {
+.featured-book h3 {
   margin: 10px 0 5px;
   font-size: 16px;
   color: #333;
 }
 
-.book span {
+.featured-book span {
   color: #888;
   font-size: 14px;
 }
 
-.book p:first-of-type {
+.featured-book p:first-of-type {
   font-size: 14px;
   margin: 5px 0;
   color: teal;
 }
 
-.book .price {
+.featured-book .price {
   font-weight: bold;
+  margin: 10px 0;
 }
-.book .price sub ins {
+.featured-book .price sub ins {
   text-decoration: line-through;
   color: #888;
   font-size: 12px;
 }
-.featured-Books .row {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  gap: 50px;
-}
 
-.featured-Books .row .title {
-  display: flex;
-  justify-content: center;
-}
-.featured-Books .book button {
-  border: #0099a0 1px solid;
-  padding: 5px 16px;
-  background-color: white;
-}
-.book:hover {
+.featured-book:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
-
-.book:hover button {
-  background-color: #0099a0;
-  color: white;
-  transition: background-color 0.7s ease, color 0.3s ease;
-  cursor: pointer;
+@media (max-width: 767px) {
+  .featured-books .row {
+    flex-direction: row;
+  }
 }
-
+/* end featured books */
 /* Start New Arrivals */
 .new-Arrivals {
   padding: 20px;
